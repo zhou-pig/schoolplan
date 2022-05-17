@@ -1,8 +1,8 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    username: root
-    password:
+    username: db
+    password: 123456
     url: jdbc:mysql://121.43.53.31:3306/db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
 rabbitmq:
   username: admin
