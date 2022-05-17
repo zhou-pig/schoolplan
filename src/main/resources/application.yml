@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password:
+    url: jdbc:mysql://121.43.53.31:3306/db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+rabbitmq:
+  username: admin
+  password: admin
+  virtual-host: /
+  host: 47.101.43.9
+  port: 5672
+server:
+  port: 8080
+  compression:
+    enabled: true
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:xml/*.xml
+  type-aliases-package: com.project.model
+#用/swagger-ui.html访问
+swagger:
+  title: 高校招生计划
+  description: 工程实践3
+  version: 1.9.0.RELEASE
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: https://github.com/dyc87112/spring-boot-starter-swagger
+  base-package: com.project
+  base-path: /**
